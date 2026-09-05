@@ -1,0 +1,30 @@
+# Vivado
+*.jou
+*.log
+*.str
+.Xil/
+*.cache/
+*.hw/
+*.runs/
+*.sim/
+*.ip_user_files/
+*.gen/
+*.xpr
+
+# Quartus
+db/
+incremental_db/
+output_files/
+*.qws
+
+# LaTeX build
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+
+# OS noise
+.DS_Store
+Thumbs.db
