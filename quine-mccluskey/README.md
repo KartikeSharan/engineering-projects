@@ -10,25 +10,25 @@ Written as the final assignment for ENG2083 *Introductory Programming 2*
 
 ## How it works
 
-1. **Truth table construction** — prompts for the number of variables *n*,
+1. **Truth table construction**: prompts for the number of variables *n*,
    builds all 2ⁿ input combinations and collects each output as `0`, `1` or
    `X`, with input validation and warnings once the table gets large.
-2. **Implicant representation** — each implicant is a triple
+2. **Implicant representation**: each implicant is a triple
    `(bits, mask, covers)`: an integer bit pattern, a bitmask marking
    don't-care positions, and the set of minterms it covers. Tracking coverage
    explicitly is what makes essential-prime-implicant detection reliable later.
-3. **Grouping and combination** — implicants are grouped by population count
+3. **Grouping and combination**: implicants are grouped by population count
    and only *adjacent* groups are compared, since terms that differ by one
    variable must differ by one in their number of ones. This prunes the
    comparison space without affecting correctness. Pairs differing in exactly
    one unmasked bit are merged, and the differing position becomes a new
    don't-care; duplicates are merged by `(bits, mask)` key.
-4. **Prime implicants** — any term surviving a round uncombined is a prime
+4. **Prime implicants**: any term surviving a round uncombined is a prime
    implicant. The loop repeats until no further combination is possible.
-5. **Cover selection** — minterms covered by exactly one prime implicant give
+5. **Cover selection**: minterms covered by exactly one prime implicant give
    the **essential** prime implicants; the remainder are covered greedily,
    repeatedly taking the implicant covering the most still-uncovered minterms.
-6. **Expression generation** — selected implicants are rendered back to
+6. **Expression generation**: selected implicants are rendered back to
    literals (`A`, `A'`, omitted where masked) and joined into an SOP
    expression.
 
@@ -51,7 +51,7 @@ F = C'B + DC' + DB
 ```
 
 which was independently confirmed by minimising the same function by hand with
-a Karnaugh map — the two are algebraically equivalent.
+a Karnaugh map; the two are algebraically equivalent.
 
 ## Known limitations
 

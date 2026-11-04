@@ -1,0 +1,18 @@
+// RISC16 test program: every opcode, non-zero operands.
+// Format: opcode[15:12] rd[11:10] rs[9:8] imm[7:0]
+0035 // 0  MOV R0,#0x35   R0 = 53
+040F // 1  MOV R1,#0x0F   R1 = 15
+1900 // 2  MOV R2,R1      R2 = 15
+2821 // 3  ADD R2,#0x21   R2 = 48
+3100 // 4  ADD R0,R1      R0 = 68
+5200 // 5  SUB R0,R2      R0 = 20
+600C // 6  AND R0,#0x0C   R0 = 4
+0CA5 // 7  MOV R3,#0xA5   R3 = 165
+7D00 // 8  AND R3,R1      R3 = 5
+9C00 // 9  OR  R3,R0      R3 = 5 | 4 = 5 (overlapping bits, so OR differs from XOR)
+BC00 // 10 SHL R3         R3 = 10
+C400 // 11 SHR R1         R1 = 7
+5600 // 12 SUB R1,R2      R1 = 7 - 48 = 0xFFD7 (wraps)
+F000 // 13 undefined opcode: must act as a NOP
+A00E // 14 JMP 14         halt loop
+0000 // 15 unused

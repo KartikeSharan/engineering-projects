@@ -1,0 +1,20 @@
+name: RISC16 CPU tests
+
+on:
+  push:
+    paths: ["risc16-cpu/**", ".github/workflows/risc16-tests.yml"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Icarus Verilog
+        run: sudo apt-get update && sudo apt-get install -y iverilog
+      - name: Run self-checking testbench
+        working-directory: risc16-cpu/revised
+        run: |
+          bash run_tests.sh | tee sim.log
+          grep -q "^PASS" sim.log
