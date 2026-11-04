@@ -1,0 +1,21 @@
+{
+    // The venv and compiler live in ~/.tdp3 (outside OneDrive) - see README.md
+    "python.defaultInterpreterPath": "~/.tdp3/venv/bin/python",
+    "terminal.integrated.env.osx": {
+        "PATH": "${env:HOME}/.tdp3/venv/bin:${env:HOME}/.tdp3/arm-gnu-toolchain/bin:${env:PATH}"
+    },
+    "terminal.integrated.env.linux": {
+        "PATH": "${env:HOME}/.tdp3/venv/bin:${env:HOME}/.tdp3/arm-gnu-toolchain/bin:${env:PATH}"
+    },
+    "terminal.integrated.env.windows": {
+        "PATH": "${env:USERPROFILE}\\.tdp3\\venv\\Scripts;${env:USERPROFILE}\\.tdp3\\arm-gnu-toolchain\\bin;${env:PATH}"
+    },
+    "files.associations": {
+        "*.h": "c",
+        "*.ld": "linkerscript"
+    },
+    "search.exclude": {
+        "build/**": true
+    },
+    "C_Cpp.default.cStandard": "c11"
+}

@@ -1,0 +1,78 @@
+{
+    // Cmd+Shift+B = Build. Everything else: Terminal > Run Task...
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceFolder}"
+    },
+    "tasks": [
+        {
+            "label": "TDP3: Build",
+            "type": "process",
+            "command": "${userHome}/.tdp3/venv/bin/python",
+            "windows": { "command": "${userHome}\\.tdp3\\venv\\Scripts\\python.exe" },
+            "args": ["tdp.py", "build"],
+            "group": { "kind": "build", "isDefault": true },
+            "problemMatcher": { "base": "$gcc", "fileLocation": ["relative", "${workspaceFolder}"] }
+        },
+        {
+            "label": "TDP3: Build + Flash",
+            "type": "process",
+            "command": "${userHome}/.tdp3/venv/bin/python",
+            "windows": { "command": "${userHome}\\.tdp3\\venv\\Scripts\\python.exe" },
+            "args": ["tdp.py", "flash", "--build"],
+            "group": "build",
+            "problemMatcher": { "base": "$gcc", "fileLocation": ["relative", "${workspaceFolder}"] }
+        },
+        {
+            "label": "TDP3: Build + Flash CALIBRATE mode",
+            "type": "process",
+            "command": "${userHome}/.tdp3/venv/bin/python",
+            "windows": { "command": "${userHome}\\.tdp3\\venv\\Scripts\\python.exe" },
+            "args": ["tdp.py", "flash", "--build", "--mode", "calibrate"],
+            "group": "build",
+            "problemMatcher": { "base": "$gcc", "fileLocation": ["relative", "${workspaceFolder}"] }
+        },
+        {
+            "label": "TDP3: Build + Flash MOTOR TEST mode",
+            "type": "process",
+            "command": "${userHome}/.tdp3/venv/bin/python",
+            "windows": { "command": "${userHome}\\.tdp3\\venv\\Scripts\\python.exe" },
+            "args": ["tdp.py", "flash", "--build", "--mode", "motortest"],
+            "group": "build",
+            "problemMatcher": { "base": "$gcc", "fileLocation": ["relative", "${workspaceFolder}"] }
+        },
+        {
+            "label": "TDP3: Serial monitor",
+            "type": "process",
+            "command": "${userHome}/.tdp3/venv/bin/python",
+            "windows": { "command": "${userHome}\\.tdp3\\venv\\Scripts\\python.exe" },
+            "args": ["tdp.py", "monitor"],
+            "presentation": { "panel": "dedicated", "focus": true },
+            "problemMatcher": []
+        },
+        {
+            "label": "TDP3: Clean",
+            "type": "process",
+            "command": "${userHome}/.tdp3/venv/bin/python",
+            "windows": { "command": "${userHome}\\.tdp3\\venv\\Scripts\\python.exe" },
+            "args": ["tdp.py", "clean"],
+            "problemMatcher": []
+        },
+        {
+            "label": "TDP3: Doctor (check setup)",
+            "type": "process",
+            "command": "${userHome}/.tdp3/venv/bin/python",
+            "windows": { "command": "${userHome}\\.tdp3\\venv\\Scripts\\python.exe" },
+            "args": ["tdp.py", "doctor"],
+            "problemMatcher": []
+        },
+        {
+            "label": "TDP3: Setup (venv + compiler, run once)",
+            "type": "process",
+            "command": "python3",
+            "windows": { "command": "python" },
+            "args": ["tdp.py", "setup"],
+            "problemMatcher": []
+        }
+    ]
+}

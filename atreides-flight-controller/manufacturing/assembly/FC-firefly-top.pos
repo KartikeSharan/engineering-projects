@@ -1,0 +1,49 @@
+### Footprint positions - created on 2025-08-18T12:00:38+0100 ###
+### Printed by KiCad version 9.0.1
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val            Package                                                   PosX       PosY       Rot  Side
+C1        10u            CP_Elec_3x5.3                                         112.6000   -67.5000    0.0000  top
+C2        1u             C_0805_2012Metric                                     112.5500   -63.5000    0.0000  top
+C3        1u             C_0805_2012Metric                                     112.5500   -60.0000    0.0000  top
+C4        10u            CP_Elec_3x5.3                                         117.1000   -57.5000    0.0000  top
+C5        100n           C_0805_2012Metric                                     132.7000   -72.5000  180.0000  top
+C6        100n           C_0805_2012Metric                                     132.7000   -77.2500  180.0000  top
+C7        100n           C_0805_2012Metric                                     156.0000   -76.5000    0.0000  top
+C8        100n           C_0805_2012Metric                                     156.0000   -71.7500    0.0000  top
+C9        100n           C_0805_2012Metric                                     155.9500   -66.7500    0.0000  top
+C10       100n           C_0805_2012Metric                                     151.7500   -63.2500   90.0000  top
+C11       100n           C_0805_2012Metric                                     146.7500   -63.2000   90.0000  top
+C12       100n           C_0805_2012Metric                                     141.5000   -63.1000   90.0000  top
+C13       100n           C_0805_2012Metric                                     136.5000   -63.0500   90.0000  top
+C14       100n           C_0805_2012Metric                                     136.8000   -81.2500  -90.0000  top
+C15       100n           C_0805_2012Metric                                     142.0500   -81.2500  -90.0000  top
+C16       100n           C_0805_2012Metric                                     147.0000   -81.2500  -90.0000  top
+C17       100n           C_0805_2012Metric                                     152.5500   -81.2500  -90.0000  top
+C18       10u            C_0805_2012Metric                                     132.8000   -67.7500  180.0000  top
+C19       10n            CP_Elec_3x5.3                                         135.0000   -90.5000    0.0000  top
+C20       1u             C_0805_2012Metric                                     132.2500   -81.7500  -90.0000  top
+C21       1u             CP_Elec_3x5.3                                         143.5000   -90.5000    0.0000  top
+C22       26p            C_0805_2012Metric                                     123.6000   -52.9073  -90.0000  top
+C23       26p            C_0805_2012Metric                                     133.0000   -53.0573   90.0000  top
+C24       100nF          C_0805_2012Metric                                     124.0000   -72.2500   90.0000  top
+C25       100nF          C_0805_2012Metric                                     116.2500   -72.2000  -90.0000  top
+C26       100nF          C_0805_2012Metric                                     146.0839   -55.3766   90.0000  top
+D1        RED            LED_D5.0mm                                            109.0250   -80.7500  180.0000  top
+F1        Polyfuse       Fuse_1812_4532Metric                                  121.2500   -90.2500   90.0000  top
+FB1       120R           L_0805_2012Metric                                     128.2500   -90.4375   90.0000  top
+P1        USB_C_Plug     USB_C_Receptacle_HRO_TYPE-C-31-M-12                   108.0000   -48.1100  -90.0000  top
+R1        330            R_0201_0603Metric_Pad0.64x0.40mm_HandSolder           112.7500   -80.7500    0.0000  top
+R2        10k            R_0201_0603Metric_Pad0.64x0.40mm_HandSolder           115.5925   -91.2500  180.0000  top
+R3        1.5k           R_0201_0603Metric_Pad0.64x0.40mm_HandSolder           120.0500   -47.9300  180.0000  top
+R4        5.1k           R_0201_0603Metric_Pad0.64x0.40mm_HandSolder           116.1925   -46.5000  180.0000  top
+R5        5.1k           R_0201_0603Metric_Pad0.64x0.40mm_HandSolder           116.4825   -51.5000  180.0000  top
+SW1       SW_MEC_5G      SW_MEC_5GSH9                                          125.0000   -40.2500  -90.0000  top
+SW2       SW_SPDT        SW_SPDT_PCM12                                         111.5000   -89.5000  -90.0000  top
+U1        STM32H743AIIx  UFBGA-169_7x7mm_Layout13x13_P0.5mm                    145.0000   -71.7500    0.0000  top
+U2        LD1117V        TO-220-3_Vertical                                     105.6550   -57.9600  -90.0000  top
+U3        BME280         Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering   112.5000   -73.0000    0.0000  top
+U4        BMI323         BMI323_BOS                                            140.6661   -55.9090    0.0000  top
+U5        BMM350         BGA9_BMM350_BOS                                       123.8499   -66.9000    0.0000  top
+Y1        16MHz          Crystal_SMD_3225-4Pin_3.2x2.5mm                       128.3500   -53.0073    0.0000  top
+## End

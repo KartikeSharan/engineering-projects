@@ -1,0 +1,2 @@
+# Python packages for tdp.py (installed into ~/.tdp3/venv by: python3 tdp.py setup)
+pyserial>=3.5

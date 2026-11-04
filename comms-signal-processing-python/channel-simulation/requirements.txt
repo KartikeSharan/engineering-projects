@@ -1,0 +1,5 @@
+# Packages for the ENG3014 notebooks. Install them with:  bash setup_env.sh
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+ipykernel>=6.29
